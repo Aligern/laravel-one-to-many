@@ -33,7 +33,6 @@
             </div>
 
             <div class="mb-3">
-                <label for="image" class="form-label">Image</label>
                 <input type="file" accept="image/*" class="form-control @error('image') is-invalid @enderror" name="image" id="uploadImage" value="{{old('image', $project->image)}}" maxlength="255">
                 @error('image')
                     <div class="alert alert-danger">{{ $message }}</div>

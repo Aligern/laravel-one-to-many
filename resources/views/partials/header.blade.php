@@ -17,7 +17,7 @@
                 <a class="nav-link" href="{{ route('admin.projects.index') }}">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-brands fa-github"></i></a>
+                <a class="nav-link" href="https://github.com/Aligern"><i class="fa-brands fa-github"></i></a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-rectangle-list"></i></a>
