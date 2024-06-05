@@ -22,5 +22,9 @@
     @else
         <img src="/img/placeholder.png" alt="{{$project->title}}">
     @endif
+    
+    @if($project->type)
+        <p>{{$project->type->name}}</p>
+    @endif
 </section>
 @endSection

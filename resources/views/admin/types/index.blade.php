@@ -9,6 +9,7 @@
         <a href="{{route('admin.types.create')}}" class="btn btn-primary me-2"><i class="fa-solid fa-plus"></i> Add new type</a>
       </div>
         <table class="table table-striped">
+          
             <thead>
                 <tr>
                   <th scope="col">Id</th>
@@ -19,6 +20,7 @@
                   <th scope="col">Action</th>
                 </tr>
               </thead>
+
               <tbody>
                 @foreach ($types as $type)
                 <tr>

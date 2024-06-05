@@ -25,7 +25,8 @@ class StoreProjectRequest extends FormRequest
             'title' => 'required|unique:projects|min:3|max:200',
             'image' => 'nullable|image|max:255',
             'content' => 'required|min:3',
-            'slug' => 'max:255'
+            'slug' => 'max:255',
+            'type_id' => 'nullable|exists:types,id'
         ];
     }
     
@@ -36,7 +37,7 @@ class StoreProjectRequest extends FormRequest
             'title.max' => 'Il titolo deve avere massimo 200 caratteri',
             'content.required' => 'Il contenuto è obbligatorio',
             'content.min' => 'Il contenuto deve avere almeno 3 caratteri',
-            'image.max' => 'L url della immagine deve avere massimo 255 caratteri',
+            'image.max' => 'L url della immagine deve avere massimo 255 caratteri',  
         ];
     }
 }
