@@ -26,9 +26,12 @@
                 <div class="media me-4">
                     @if($project->image)
                         <img src="{{asset('storage/'. $project->image)}}" class="shadow" width="150" alt="{{$project->title}}" id="uploadPreview">
+                    @else
+                        <img class="shadow" width="150" src="/img/placeholder.png" alt="{{$project->title}}" id="uploadPreview">
                     @endif
                 </div>
             </div>
+
             <div class="mb-3">
                 <label for="image" class="form-label">Image</label>
                 <input type="file" accept="image/*" class="form-control @error('image') is-invalid @enderror" name="image" id="uploadImage" value="{{old('image', $project->image)}}" maxlength="255">

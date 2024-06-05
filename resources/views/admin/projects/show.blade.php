@@ -16,6 +16,11 @@
         </div>
     </div>
     <p>{{$project->content}}</p>
-    <img src="{{asset('storage/'. $project->image)}}" alt="{{$project->title}}">
+    {{-- <img src="{{asset('storage/'. $project->image)}}" alt="{{$project->title}}"> --}}
+    @if($project->image)
+        <img src="{{asset('storage/'. $project->image)}}" alt="{{$project->title}}">
+    @else
+        <img src="/img/placeholder.png" alt="{{$project->title}}">
+    @endif
 </section>
 @endSection

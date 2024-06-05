@@ -17,6 +17,6 @@ if (image) {
         reader.onload = function (event) {
 
             preview.src = event.target.result;
-        }
-    }) 
+        };
+    });
 }
