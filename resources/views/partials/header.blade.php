@@ -1,7 +1,7 @@
 <header class="shadow-sm">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="{{ route('admin.dashboard') }}">
+          <a class="navbar-brand text-white" href="{{ route('admin.dashboard') }}">
               <img class="profile-img" src="/img/Numemon.png" alt="Numemon">
             Benvenuto {{ Auth::user()->name }}
           </a>
@@ -11,16 +11,16 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="{{ route('home') }}">Home</a>
+                <a class="nav-link text-white" aria-current="page" href="{{ route('home') }}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('admin.projects.index') }}">Projects</a>
+                <a class="nav-link text-white" href="{{ route('admin.projects.index') }}">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://github.com/Aligern"><i class="fa-brands fa-github"></i></a>
+                <a class="nav-link text-white" href="https://github.com/Aligern"><i class="fa-brands fa-github"></i></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-rectangle-list"></i></a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="text-white fa-solid fa-rectangle-list"></i></a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#" id="userProfile" role="button">
                     <span class="mr-2 d-none d-lg-inline text-grat-600 small">Profile</span>

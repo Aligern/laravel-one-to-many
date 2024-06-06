@@ -1,4 +1,4 @@
-<nav id='sidebar' class="bg-dark navbar-dark">
+<nav id='sidebar'>
     <a href="/" class="nav-link text-light">
         <h2 class="p-2"><i class="fa-solid fa-folder-open pe-2"></i>Boolfolio</h2>
     </a>

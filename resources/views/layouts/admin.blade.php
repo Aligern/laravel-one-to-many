@@ -19,7 +19,7 @@
     @vite(['resources/js/app.js'])
 </head>
 
-<body>
+<body id="adminBody">
     <div id="admin">
         @include('partials.sidebar')
         <div id="wrapper">
